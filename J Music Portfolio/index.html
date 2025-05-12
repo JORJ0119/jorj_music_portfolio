@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J Music Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00c6ff;
+      --secondary: #0072ff;
+      --accent: #4be0b2;
+      --background: linear-gradient(to right, #0072ff, #00c6ff, #4be0b2);
+      --text-dark: #001f3f;
+      --text-light: #ffffff;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text-dark);
+    }
+    header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 5px solid var(--secondary);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--secondary);
+      padding: 1rem 0;
+    }
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #ffffffcc;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: var(--secondary);
+    }
+    .music-item {
+      margin-bottom: 2rem;
+    }
+    audio {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    embed {
+      width: 100%;
+      height: 500px;
+      margin-top: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: var(--secondary);
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: var(--primary);
+      color: var(--text-light);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>J Music Portfolio</h1>
+    <p>Multi-instrumentalist | Reviewer | Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm J Music. I play keyboard, guitar, saxophone, ocarina, and kalimba. This site is my personal music portfolio where I showcase my original work, arrangements, and thoughts about the music and media world.</p>
+  </section>
+
+  <section id="music">
+    <h2>My Music</h2>
+    <div class="music-item">
+      <h3>Across Space and Time</h3>
+      <audio controls>
+        <source src="music/across_space_and_time.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <embed src="scores/across_space_and_time.pdf" type="application/pdf">
+    </div>
+    <div class="music-item">
+      <h3>What If</h3>
+      <audio controls>
+        <source src="music/what_if.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <embed src="scores/what_if.pdf" type="application/pdf">
+    </div>
+    <div class="music-item">
+      <h3>Guardian</h3>
+      <audio controls>
+        <source src="music/guardian.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <embed src="scores/guardian.pdf" type="application/pdf">
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <article>
+      <h3>Latest Thoughts on Film Scores</h3>
+      <p>Exploring how music brings stories to life in my latest article. Stay tuned!</p>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/{your-id}" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 J Music Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
